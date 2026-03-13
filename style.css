@@ -1,0 +1,140 @@
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: black;
+	background-repeat: repeat;
+
+	/* externally defined repeating background */
+	background-image: var(--bgimg, null);
+	background-size: var(--bgsize, 128px);
+
+	font-size: 123%;
+	color: white;
+}
+
+header, footer, .column
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pixelart
+{
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+	/* disable bilinear filtering for pixel art images*/
+}
+
+.row
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.column
+{
+	height: 100%;
+	flex-wrap: wrap;
+}
+
+.floating
+{
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.draggingBar
+{
+	padding: 0em;
+	height: fit-content;
+	width: 100%;
+	border: none;
+	border-bottom: white solid 2px;
+}
+
+.draggingBar:hover
+{
+	cursor: grab;
+}
+
+.floatingContent
+{
+	margin: 1em;
+	padding: 1em;
+}
+
+header, footer, button, .box
+{
+	background: black;
+}
+
+p, h1, h2, h3, h4
+{
+	margin: 0.2em;
+}
+
+header
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	border-bottom: 0.3em ridge white;
+}
+
+footer
+{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: black;
+	border-top: 0.3em ridge white;
+}
+
+.box
+{
+	border: 0.3em ridge white;
+	width: fit-content;
+	height: fit-content;
+}
+
+button
+{
+	border-color: white;
+	border-style: ridge;
+	color: lime;
+	font-size: 150%;
+}
+
+button:hover
+{
+	text-decoration: underline;
+	transform: translateY(-0.0.3em);
+	cursor: grab;
+}
+
+a
+{
+	color: blue;
+}
+
+a:visited
+{
+	color: purple;
+}
+
+a:active
+{
+	transform: translateY(0.0.3em);
+}
+

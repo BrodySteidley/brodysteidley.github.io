@@ -1,1 +1,36 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Brody Steidley</title>
+	<style>
+		:root{
+			--bgimg: url("/assets/img/rhombusTesselation.svg");
+		}
+		@keyframes bgpulse{
+			0% { background-position: left 0% top 0% }
+			50% { background-position: left -30% top 100% }
+			100% { background-position: left 0% top 0% }
+		}
+		body {
+			animation: bgpulse 60s ease-in-out infinite;
+		}
+	</style>
+	<link href="/style.css" rel="stylesheet" />
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+	<div class="row" style="justify-content: center; height: 100%;">
+		<div class="column" style="justify-content: flex-start; background: rgba(0, 0, 0, 0.8); padding:0.5em; width: 60%">
+			<h1>Brody S</h1>
+			<p>Welcome to Brody Steidley's personal web-page.</p>
+			<p>At the moment there isn't much here.</p>
+			<h2>Git</h2>
+			<p>Visit <a href="https://github.com/BrodySteidley">github.com/BrodySteidley</a> to see some of my programming projects.</p>
+			<h2>Contact</h2>
+			<p>Email: Brody@Steidley.org</p>
+			<p>I do not use any social media platforms.</p>
+		</div>
+	</div>
+</body>
+</html>
