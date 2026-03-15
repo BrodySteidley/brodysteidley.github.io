@@ -25,6 +25,17 @@ header, footer, .column
 	align-items: center;
 }
 
+#homelink
+{
+	color: white;
+	text-decoration: none;
+}
+#homelink:hover
+{
+	color: blue;
+	text-decoration: underline;
+}
+
 .pixelart
 {
 	image-rendering: pixelated;
@@ -38,13 +49,11 @@ header, footer, .column
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 }
 
 .column
 {
 	height: 100%;
-	flex-wrap: wrap;
 }
 
 .floating
