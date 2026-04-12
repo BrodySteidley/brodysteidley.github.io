@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Brody S</title>
+	<style>
+		:root{
+			--bgimg: url("/assets/img/coolPattern.png");
+			--bgsize: 32px;
+		}
+		@keyframes bgpulse{
+			0% { background-brightness: white }
+			50% { background-position: red }
+			100% { background-position: yellow }
+		}
+		body {
+			animation: bgpulse 60s ease-in-out infinite;
+		}
+	</style>
+	<link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="row" style="justify-content: center; min-height: 100vh;">
+		<div class="column" style="width: 60%; justify-content: flex-start; background: rgba(0, 0, 0, 0.8); padding:0.5em;">
+			<h1><a id="homelink" href="/">Brody S</a></h2>
+			<h2>Web Games</h2>
+			<h3><a href="flappybird">Flappy Bird</a></h3>
+			<h3><a href="oldgamejams">Old Game Jams</a></h3>
+		</div>
+	</div>
+</body>
+</html>
